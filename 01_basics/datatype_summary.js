@@ -61,3 +61,23 @@ console.log(id == newId)    //false
 
 console.table([ id, newId])
 
+let intValue = 42; // Your integer value
+let bigIntValue = 42n; // Directly creating a BigInt
+console.log(bigIntValue)
+
+
+// Non Primitive
+
+const emp = ["Rohit", "Sunil", "Kuldeep"];
+const empdetail = {
+    name : "Rohit",
+    age : 23
+}
+
+const empFunc = function(){
+    console.log(empdetail)
+}
+
+empFunc();
+
+// https://262.ecma-international.org/5.1/#sec-11.4.3
