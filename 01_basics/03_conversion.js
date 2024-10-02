@@ -34,9 +34,9 @@ let value = 3
 let negValue = -value
 //console.log(negValue);
 
-let str1 = 1 + "2"
-let str2 = "1" + 2
+let str1 = 1 + "2"        // "12"
+let str2 = "1" + 2        // "12"
 console.table([str1, typeof str1, str2, typeof str2])
 
-console.log("2" + 1 + 3)
-console.log( 2 + 1 + "3")
+console.log("2" + 1 + 3)    // "213"
+console.log( 2 + 1 + "3")   //  "33"
