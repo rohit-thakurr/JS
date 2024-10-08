@@ -53,7 +53,7 @@ console.log("Original Array after slice", myArray)
 */
 
 const originalArray = [1, 2, false, [4, 5]]; // Original array
-const slicedArray = originalArray.slice(1,4);
+const slicedArray = originalArray.slice(1,4);  // Returns a copy of section of an array
 
 slicedArray[0] = 40
 slicedArray[2][0] = 100
@@ -74,6 +74,28 @@ console.log("Original Array", originalArray)    //  [ 1, 2, false, [ 100, 5 ] ]
     Doing this  will  change values in originalArray because non-primitive datatypes are actually reference of 
     originalArray data, And we make making chanages in original data locations
 */
+
+const myArrOne = [1, 2, 3, 4, 5];
+const splicedArray = myArrOne.splice(1,2)  // From index 1 delete the next two elements
+
+console.table([myArrOne,splicedArray])     // [1,4,5] && [2,3]
+
+/*
+    In JavaScript, the splice() method is used to add, remove, 
+    or replace elements in an array by directly modifying the original array. 
+    It is a powerful tool for making changes in-place, unlike slice(), 
+    which returns a shallow copy and doesn't alter the original array.
+
+    array.splice(start, deleteCount, item1, item2, ...)
+    start: The index at which to start changing the array.
+    deleteCount: The number of elements to remove (can be 0 if you just want to insert elements).
+    item1, item2, ...: The elements to add to the array, starting from the start index (optional).
+*/
+
+const myArrTwo = [1,2,[3,4],5,6]
+const splicedArr2 = myArrTwo.splice(1,2,[101,102]);
+console.log([myArrTwo,splicedArr2])
+
 
 
 
