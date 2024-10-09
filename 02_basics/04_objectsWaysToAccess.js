@@ -46,6 +46,7 @@ console.log(JUser.fullName)           // This String key Can be access like this
     Cannot be a reserved keyword in JavaScript (like if, for, var, etc.).
 */
 
+
 const myObj = {
     name: "John",           // valid (starts with a letter)
     _age: 30,               // valid (starts with an underscore)
