@@ -7,6 +7,11 @@ console.log( typeof(age))    //Both can be use
 let valueInNumber = Number(age)
 console.log(typeof valueInNumber)
 
+/*
+    let num1 = new Number(23) creates an object.
+    let num2 = Number(23) creates a primitive value.
+*/
+
 let newAge = "33abc"
 let wrongAge = Number(newAge)
 
