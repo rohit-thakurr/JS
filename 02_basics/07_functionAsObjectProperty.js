@@ -38,8 +38,8 @@ JUser.greetingsTwo = function() {
 
 /*
      Arrow functions in JavaScript have a different behavior regarding the this context.
-     Arrow functions do not have their own this. Instead, 
-     they inherit this from the surrounding lexical scope at the time they are defined.
+     Arrow functions do not have their own this. 
+     Instead, they inherit this from the surrounding lexical scope at the time they are defined.
 
      This means that this inside an arrow function refers to the this value from the enclosing context
      where the arrow function was created,not the object from which the method is being called.
@@ -48,5 +48,11 @@ JUser.greetingsThree = () => {
     console.log(`Greeting User ${this.name}`);    // 'this' refers to the enclosing lexical scope
 }
 
-JUser.greetingsTwo()          
-JUser.greetingsThree()
+JUser.greetingsTwo()         // Greeting User Rohit ( this.name => object.name)   
+JUser.greetingsThree()      // Greeting User undefined ( here this.name => tries to find some global property)
+
+/*
+    Key takeaway:
+    Arrow functions: this refers to the surrounding (lexical) scope, not the object.
+    Regular functions: this refers to the object they are called on.
+*/
