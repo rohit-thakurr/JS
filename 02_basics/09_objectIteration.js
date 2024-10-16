@@ -18,3 +18,11 @@ const peoples = [
 peoples.map( (people) => {
     console.log(Object.values(people))
 })
+
+console.log(Object.entries(user)) // [ [ 'Id', 1 ], [ 'name', 'Rohit' ], [ 'work', 'SDE' ] ]
+                                  // return an array of key-value pairs from the user object.
+
+
+// To Check whether any property exist in an object
+console.log(user.hasOwnProperty('name'))           // true -> yes it exist
+console.log(user.hasOwnProperty('names'))          // false -> no it does not exist
