@@ -36,6 +36,6 @@ const {occupation = 'Designer'} = user;
 */
 
 
-const {isLogged : checkIn, address : { city }} = user; // Nested Object Destructuring
-console.log(checkIn,city)
+const {isLogged : checkIn, address : { city,zip }} = user; // Nested Object Destructuring
+console.log(checkIn,city,zip)
 
