@@ -49,3 +49,19 @@ const arrowFunc = () => {
 }
 
 arrowFunc();
+
+
+
+/*
+    Summary of this keyword
+
+    1. this keyword in js file at top level (not in any functions or object) 
+        -> returns window object in browser console.
+        -> returns module export object of that js file in terminal
+
+    2. this keyword in function returns different values in regular function & arrow function
+        -> In regular functions this keyword returns global object.
+        -> In arrow functions this keyword returns module export object of that js file in terminal & 
+           global object in browser console.
+
+*/
