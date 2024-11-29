@@ -65,3 +65,31 @@ arrowFunc();
            global object in browser console.
 
 */
+
+
+console.log(this)          // {} object -> module export object
+function chai(){
+    console.log(this)      // global object
+}
+
+const sutta = function badiAdvance(){
+    console.log(this);     // global object
+}
+
+const daaru = () => {
+    console.log(this)      // {} object
+}
+
+chai();
+sutta();
+daaru();
+
+/*
+    If you try to access this keyword in function without accession & calling it without object then this refers
+    to global object.
+
+    In js file, this at the top level does not refer to the global object (global),
+    but rather to the module exports object, which is an empty object {} by default.
+
+    In arrow function this refers to module exports object
+*/
