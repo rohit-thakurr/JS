@@ -40,9 +40,9 @@ const obj = {
     */
 }
 
-// obj.welcome();
-// obj.userName = "NoBody"
-// obj.welcome();
+obj.welcome();
+obj.userName = "NoBody"
+obj.welcome();
 
 obj.obj2.welcomeNow();
 /*
